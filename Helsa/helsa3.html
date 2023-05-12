@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Top Up</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content=""> 
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="assets-helsa/css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="assets-helsa/css-helsa.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="assets-helsa/css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="assets-helsa/images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="assets-helsa/css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="assets-helsa/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets-helsa/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="..." crossorigin="anonymous" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="..." crossorigin="anonymous" />
+
+
+</head>
+<body>
+
+  <div>
+    <!-- header -->
+    <!-- <div class="img-hiasan">
+      <img src="assets-helsa/Images/hiasan.png" alt="" class="hiasan-png">
+    </div> -->
+    <div class="header-topup">
+      <h1 class="judul-topup">
+        <a href="helsa2.html"><i class="fa-solid fa-arrow-left" style="float:left; color: white;"></i></a>
+        Top Up Aplikasi
+      </h1>
+    </div>
+    <!-- end header -->
+
+
+    <!-- <div class="tujuan-topup">
+        <img src="assets-helsa/Images/ewallet.png" alt="" class="gambar">
+        <p> Top Up <br> <strong>Pilih Tujuan</strong></p> <hr>
+    </div> -->
+
+    <div class="tujuan-topup" onclick="showPopup()">
+        <img src="assets-helsa/Images/ewallet.png" alt="" class="gambar" style="width: 40px; height: auto;">
+        <p> Top Up <br> <strong>Pilih Tujuan</strong></p>
+        <hr>
+      </div>
+    
+      <div id="popup" class="popup">
+        <!-- Isi konten pop up di sini -->
+        <div style="align-items: center; display: flex;" onclick="hidePopup()">
+            <img src="assets-helsa/Images/gopay.jfif" alt="Gambar" style="width: 60px; height: auto; display: flex;">
+            <p><b>GOPAY</b></p>
+        </div>
+        <div style="align-items: center; display: flex;" onclick="hidePopup()">
+            <img src="assets-helsa/Images/dana.png" alt="Gambar" style="width: 60px; height: auto; display: flex;">
+            <p><b>DANA</b></p>
+        </div>
+        <div style="align-items: center; display: flex;" onclick="hidePopup()">
+            <img src="assets-helsa/Images/spay.png" alt="Gambar" style="width: 60px; height: auto; display: flex;">
+            <p><b>Shopee Pay</b></p>
+        </div>
+        <div style="align-items: center; display: flex;" onclick="hidePopup()">
+            <img src="assets-helsa/Images/ovo.jfif" alt="Gambar" style="width: 60px; height: auto; display: flex;">
+            <p><b>OVO</b></p>
+        </div>
+      </div>
+
+    <div class="tujuan-topup">
+        <img src="assets-helsa/Images/add-contact.png" alt="" class="gambar" style="width: 30px; height: auto; margin-left: 10px;">
+        <p> Nomor Handphone <br> <strong> <input type="text" placeholder="Nomor Tujuan"> </strong></p> <hr>
+    </div>
+
+
+
+  </div>
+    
+  <style>
+    .popup {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 90%;
+      max-width: 500px;
+      height: 300px;
+      background-color: white;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      display: none;
+    }
+  
+    .popup.show {
+      display: block;
+    }
+  </style>
+  
+  <!-- Kode JavaScript untuk pop up -->
+  <script>
+    function showPopup() {
+      document.getElementById("popup").classList.add("show");
+    }
+  
+    function hidePopup() {
+        window.location.href = 'helsa4.html';;
+    }
+  </script>
+    <!-- Javascript files-->
+    <script src="assets-helsa/js/jquery.min.js"></script>
+    <script src="assets-helsa/js/popper.min.js"></script>
+    <script src="assets-helsa/js/bootstrap.bundle.min.js"></script>
+    <script src="assets-helsa/js/jquery-3.0.0.min.js"></script>
+    <script src="assets-helsa/js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="assets-helsa/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets-helsa/js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="assets-helsa/js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
+    <script src="https://kit.fontawesome.com/7485812cbe.js" crossorigin="anonymous"></script>
+  </body>
+</html>
